@@ -1,0 +1,5 @@
+{
+    "name": "Valet Parking App - Development",
+    "db": "mongodb://localhost/valet-parking",
+    "env": "development"
+}

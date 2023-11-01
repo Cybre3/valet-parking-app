@@ -1,0 +1,368 @@
+
+--- undefined error ---
+[undefined]error uncaughtException: Win is not defined
+stack: ReferenceError: Win is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:3
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:3
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:3
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:3
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2
+    Winston.info(`Application Name: ${}`)
+                                      ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: con is not defined
+stack: ReferenceError: con is not defined
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:1
+const config
+      ^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:4:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:4:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston is not defined
+stack: ReferenceError: Winston is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:4:5)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Identifier 'module' has already been declared
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:4
+module.exports = function () {
+^
+
+SyntaxError: Identifier 'module' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Winston.info is not a function
+stack: TypeError: Winston.info is not a function
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:5:13)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:9:28)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: The "id" argument must be of type string. Received undefined
+stack: TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:399:5)
+    at validateString (node:internal/validators:163:11)
+    at Module.require (node:internal/modules/cjs/loader:1134:3)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\config.js:2:17)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+--- undefined error ---
+
