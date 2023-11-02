@@ -366,3 +366,453 @@ stack: TypeError [ERR_INVALID_ARG_TYPE]: The "id" argument must be of type strin
     at Module.require (node:internal/modules/cjs/loader:1141:19)
 --- undefined error ---
 
+
+--- undefined error ---
+[undefined]error uncaughtException: Cannot find module '../../'
+stack: Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+Error: Cannot find module '../../'
+Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Cannot find module '../start'
+stack: Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+Error: Cannot find module '../start'
+Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Cannot find module '../startup/'
+stack: Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+Error: Cannot find module '../startup/'
+Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Cannot find module './startup/'
+stack: Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+Error: Cannot find module './startup/'
+Require stack:
+- C:\Users\cybre\Documents\valet-parking-app\server\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: express is not defined
+stack: ReferenceError: express is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:14:13)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:40)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: express is not defined
+stack: ReferenceError: express is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:14:13)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:40)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: required is not defined
+stack: ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: required is not defined
+stack: ReferenceError: required is not defined
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:1:17)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'const'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:10
+const myFormat = printf(({ level, message }) => {
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'const'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:10
+const myFormat = printf(({ level, message }) => {
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:8
+const cars
+      ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'const'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:10
+const myFormat = printf(({ level, message }) => {
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:31
+}
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: app.use() requires a middleware function
+stack: TypeError: app.use() requires a middleware function
+    at Function.use (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\application.js:217:11)
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:30:9)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:40)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: app.use() requires a middleware function
+stack: TypeError: app.use() requires a middleware function
+    at Function.use (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\application.js:217:11)
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:30:9)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:40)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'new'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:19
+            const new
+                  ^^^
+
+SyntaxError: Unexpected token 'new'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ')'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:19
+            const newCar = new Car({...req.body)
+                                               ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ')'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:21
+            console.log(new);
+                           ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'const'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\middleware\validateMiddleware.js:9
+const getDB = require('../utilities/getDB');
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Identifier 'newCar' has already been declared
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:19
+            const newCar = new Car({ ...req.body });
+                  ^
+
+SyntaxError: Identifier 'newCar' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Identifier 'newCar' has already been declared
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:19
+            const newCar = new Car({ ...req.body });
+                  ^
+
+SyntaxError: Identifier 'newCar' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ')'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:17
+            if (new) return res.status(400).send('Car has already been stored.');
+                   ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Identifier 'newCar' has already been declared
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:19
+            const newCar = new Car({ ...req.body });
+                  ^
+
+SyntaxError: Identifier 'newCar' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Identifier 'carIsInSystem' has already been declared
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:19
+            const carIsInSystem = new Car({ ...req.body });
+                  ^
+
+SyntaxError: Identifier 'carIsInSystem' has already been declared
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+

@@ -13,14 +13,14 @@ const api = ({ dispatch }) => next => async action => {
 
     try {
         const response = await axios.request({
-            baseUrl: process.env.REACT_APP_API_URL,
+            baseURL: process.env.REACT_APP_API_URL,
             url,
             method,
             data
         });
 
         dispatch(actions.apiCallSuccess(response.data));
-        if (onSuccess) dispatch({ type: onSuccess, payload: response.data })
+        if (onSuccess) dispatch({ type: onSuccess, payload: response.data });
     } catch (error) {
         dispatch(actions.apiCallFailed(error.message));
         if (onError) dispatch({ type: onError, payload: error.message });

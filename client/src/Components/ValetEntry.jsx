@@ -1,4 +1,6 @@
 import Joi from 'joi-browser'
+import { connect } from 'react-redux';
+
 import Form from './form/Form';
 
 import { addCar } from '../store/cars';
@@ -8,7 +10,7 @@ class ValetEntry extends Form {
         data: {
             date: new Date().toISOString().substring(0, 10),
             color: '',
-            phoneNumber: '',
+            phone: '',
             make: '',
             model: '',
             lotLocation: ''
@@ -31,14 +33,18 @@ class ValetEntry extends Form {
         _id: Joi.string(),
         date: Joi.date().required().label('Date'),
         color: Joi.string().required().label('Color'),
-        phoneNumber: Joi.string().required().label('Phone Number'),
+        phone: Joi.string().required().label('Phone Number'),
         make: Joi.string().required().label('Make'),
         model: Joi.string().required().label('Model'),
         lotLocation: Joi.string().required().label('Lot Location')
     }
 
     doSubmit = () => {
-        addCar(this.state.data);
+        try {
+            this.props.addCar(this.state.data);
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     render() {
@@ -46,7 +52,7 @@ class ValetEntry extends Form {
             <div className='w-1/4'>
                 <form onSubmit={this.handleSubmit} className='space-y-2'>
                     <div className='flex'>
-                        {this.renderInput('phoneNumber', 'Phone', 'phone')}
+                        {this.renderInput('phone', 'Phone', 'phone')}
                         {this.renderInput('date', 'Date', 'date')}
                     </div>
                     {this.renderInput('color', 'Color')}
@@ -60,4 +66,11 @@ class ValetEntry extends Form {
     }
 }
 
-export default ValetEntry;
+const mapStateToProps = state => ({});
+
+const mapDispatchToProps = dispatch => ({
+    addCar: car => dispatch(addCar(car))
+});
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(ValetEntry);

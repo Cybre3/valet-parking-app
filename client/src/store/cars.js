@@ -25,9 +25,8 @@ const slice = createSlice({
 
         carAdded: (cars, action) => {
             const internalCars = cars.list;
-            const addedCar = action.payload
+            const addedCar = action.payload;
             cars.list.push(action.payload)
-            console.log('Car Added', {internalCars, addedCar})
         },
 
         carRemoved: (cars, action) => {
@@ -37,23 +36,17 @@ const slice = createSlice({
 });
 
 const {
-    carsRequested,
-    carsRequestFailed,
-    carsReceived,
     carAdded,
-    carRemoved
 } = slice.actions;
 
 export default slice.reducer;
 
 const url = '/cars';
 
-export const addCar = car => {
-    console.log('attempting to call api to add acr')
-    // apiCallBegan({
-    //     url,
-    //     method: 'post',
-    //     data: car,
-    //     onSuccess: carAdded.type
-    // });
-}
+export const addCar = car =>
+    apiCallBegan({
+        url,
+        method: 'post',
+        data: car,
+        onSuccess: carAdded.type
+    })

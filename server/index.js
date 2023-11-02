@@ -7,6 +7,7 @@ const app = express();
 
 require('./startup/logging')(app);
 require('./startup/cors')(app);
+require('./startup/routes-middlesware')(app);
 require('./startup/config')();
 require('./startup/db')(app);
 

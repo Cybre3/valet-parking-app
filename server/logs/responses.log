@@ -1,0 +1,5 @@
+
+--- response error ---
+[2023-11-01 08:41:27.825 PM] error {"message":{"path":["lotLocation"],"error":"\"lotLocation\" is required","context":"{\n\tlabel: lotLocation,\n\tkey: lotLocation\n }","fileTrace":"C:\\Users\\cybre\\Documents\\valet-parking-app\\server\\middleware\\validateMiddleware.js","requestTrace":"POST /cars - addCar"}}
+--- response error ---
+
