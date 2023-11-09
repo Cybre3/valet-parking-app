@@ -19,9 +19,22 @@ module.exports = {
             carIsInSystem = new Car({ ...req.body });
             await carIsInSystem.save();
 
-            console.log(carIsInSystem);
-
             res.status(201).send(carIsInSystem);
+        }
+    },
+
+    patch: {
+        assignCarLotLocation: async (req, res) => {
+            const { lotLocation } = req.body;
+            const { id } = req.params;
+
+            let carIsInSystem = await Car.findOne({ _id: id });
+            if (!carIsInSystem) return res.status(404).send('Car not found.');
+
+            carIsInSystem.lotLocation = lotLocation;
+            await carIsInSystem.save();
+
+            res.status(200).send(carIsInSystem);
         }
     }
 }

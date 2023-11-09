@@ -1,19 +1,24 @@
 import { Provider } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
 
 import configureStore from './store/configureStore';
 
 import ValetEntry from './Components/ValetEntry';
+import LotLocation from './Components/LotLocation';
 
 import './App.css';
+import Cars from './Components/Cars';
 
 const store = configureStore();
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="">
-        <ValetEntry />
-      </div>
+      <Routes>
+        <Route path='/' element={<ValetEntry />} />
+        <Route path='/lotLocation/:id' element={<LotLocation />} />
+        <Route path='/cars' element={<Cars />} />
+      </Routes>
     </Provider>
   );
 }

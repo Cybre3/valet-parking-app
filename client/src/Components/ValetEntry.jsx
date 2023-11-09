@@ -1,9 +1,12 @@
 import Joi from 'joi-browser'
 import { connect } from 'react-redux';
+import { Navigate } from 'react-router-dom';
 
-import Form from './form/Form';
+import Form from './common/form/Form';
 
-import { addCar } from '../store/cars';
+import { addCar, getCarByPhoneMakeModel, loadCars } from '../store/cars';
+
+import arrowIcon from '../assets/right-entry-arrow-icon.png';
 
 class ValetEntry extends Form {
     state = {
@@ -13,21 +16,11 @@ class ValetEntry extends Form {
             phone: '',
             make: '',
             model: '',
-            lotLocation: ''
         },
+        redirect: false,
+        savedCarId: '',
         errors: {}
     }
-
-    lotLocationOptions = [
-        { id: 1, value: 'Front Lot, Row 1' },
-        { id: 2, value: 'Front Lot, Row 2' },
-        { id: 3, value: 'Front Lot, Row 3' },
-        { id: 4, value: 'Front Lot, Row 4' },
-        { id: 5, value: 'Circle' },
-        { id: 6, value: 'Side Lot, Row 1' },
-        { id: 7, value: 'Side Lot, Row 2' },
-        { id: 8, value: 'Side Lot, Row 3' },
-    ]
 
     schema = {
         _id: Joi.string(),
@@ -36,40 +29,55 @@ class ValetEntry extends Form {
         phone: Joi.string().required().label('Phone Number'),
         make: Joi.string().required().label('Make'),
         model: Joi.string().required().label('Model'),
-        lotLocation: Joi.string().required().label('Lot Location')
     }
 
-    doSubmit = () => {
+    doSubmit = async () => {
         try {
-            this.props.addCar(this.state.data);
+            await this.props.addCar(this.state.data);
+            await this.props.loadCars();
+            const [{ _id }] = this.props.savedCar(this.state.data);
+
+            this.setState({ redirect: true, savedCarId: _id })
         } catch (error) {
             console.log(error)
         }
     }
 
+    submitBtn = () => <img src={arrowIcon} alt='arrowIcon' className='w-10 cursor-pointer' />
+
     render() {
         return (
-            <div className='w-1/4'>
-                <form onSubmit={this.handleSubmit} className='space-y-2'>
-                    <div className='flex'>
-                        {this.renderInput('phone', 'Phone', 'phone')}
-                        {this.renderInput('date', 'Date', 'date')}
+            this.state.redirect ?
+                <Navigate to={`/lotLocation/${this.state.savedCarId}`} /> :
+                <div className="flex justify-center items-center h-screen">
+
+                    <div className='entry-box w-fit border-4 rounded-md p-10 shadow-lg bg-neutral-50'>
+                        <form onSubmit={this.handleSubmit} className='space-y-12'>
+                            <div className='flex space-x-6'>
+                                {this.renderInput('phone', 'Phone', 'phone')}
+                                {this.renderInput('date', 'Date', 'date')}
+                            </div>
+                            <div className='space-y-6 flex flex-col items-center'>
+                                {this.renderInput('color', 'Color')}
+                                {this.renderInput('make', 'Make')}
+                                {this.renderInput('model', 'Model')}
+                            </div>
+                            {this.renderButton(this.submitBtn(), '', 'valetBtn', 'bg-transparent')}
+                        </form>
                     </div>
-                    {this.renderInput('color', 'Color')}
-                    {this.renderInput('make', 'Make')}
-                    {this.renderInput('model', 'Model')}
-                    {this.renderDropdown('lotLocation', 'Lot Location', this.lotLocationOptions)}
-                    {this.renderButton('Submit')}
-                </form>
-            </div>
+                </div>
         )
     }
 }
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+    cars: state.entities.cars.list,
+    savedCar: obj => getCarByPhoneMakeModel(obj)(state)
+});
 
 const mapDispatchToProps = dispatch => ({
-    addCar: car => dispatch(addCar(car))
+    loadCars: () => dispatch(loadCars()),
+    addCar: car => dispatch(addCar(car)),
 });
 
 

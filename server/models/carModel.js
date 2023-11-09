@@ -25,7 +25,6 @@ function validateCar(input) {
         phone: JoiPhone.string().phoneNumber().required(),
         make: Joi.string().required(),
         model: Joi.string().required(),
-        lotLocation: Joi.string().required(),
     });
 
     return schema.validate(input);

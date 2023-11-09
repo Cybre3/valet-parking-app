@@ -3,12 +3,12 @@ import ErrorMessage from './ErrorMessage';
 
 const Dropdown = ({ name, label, error, options, classes, ...rest }) => {
   return (
-    <div className={`form-group ${classes ? classes.inputContainer : ''}`}>
+    <div className={`form-group space-x-2 ${classes ? classes.inputContainer : ''}`}>
       <label className={classes ? classes.labelClass : ''} htmlFor={name}>
         {label}
       </label>
       <select
-        className={`form-control ${classes ? classes.inputClass : ''}`}
+        className={`form-control outline outline-1 ${classes ? classes.inputClass : ''}`}
         name={name}
         id={name}
         {...rest}
