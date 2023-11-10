@@ -3,7 +3,7 @@ import TableHeader from "./TableHeader";
 
 const Table = ({ columns, sortColumn, onSort, data }) => {
     return (
-        <table className="border-spacing-4">
+        <table>
             <TableHeader columns={columns} sortColumn={sortColumn} onSort={onSort} />
             <TableBody data={data} columns={columns} />
         </table>

@@ -122,3 +122,8 @@ export const getCarByPhoneMakeModel = obj => createSelector(
         return _.isEqual(matchCar, savedCar);
     })
 )
+
+export const getCarById = id => createSelector(
+    state => state.entities.cars,
+    cars => cars.list.filter(car => car._id === id)
+)

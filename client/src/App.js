@@ -8,6 +8,7 @@ import LotLocation from './Components/LotLocation';
 
 import './App.css';
 import Cars from './Components/Cars';
+import CarDetails from './Components/CarDetails';
 
 const store = configureStore();
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/' element={<ValetEntry />} />
         <Route path='/lotLocation/:id' element={<LotLocation />} />
         <Route path='/cars' element={<Cars />} />
+        <Route path='/cars/:id' element={<CarDetails />} />
       </Routes>
     </Provider>
   );

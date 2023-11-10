@@ -1,6 +1,6 @@
 import Joi from 'joi-browser'
 import { connect } from 'react-redux';
-import { Navigate } from 'react-router-dom';
+import { NavLink, Navigate } from 'react-router-dom';
 
 import Form from './common/form/Form';
 
@@ -37,7 +37,7 @@ class ValetEntry extends Form {
             await this.props.loadCars();
             const [{ _id }] = this.props.savedCar(this.state.data);
 
-            this.setState({ redirect: true, savedCarId: _id })
+            this.setState({ redirect: true, savedCarId: _id });
         } catch (error) {
             console.log(error)
         }
@@ -64,6 +64,7 @@ class ValetEntry extends Form {
                             </div>
                             {this.renderButton(this.submitBtn(), '', 'valetBtn', 'bg-transparent')}
                         </form>
+                        <NavLink to='/cars' className='bg-neutral-400 px-4 py-2 w-fit rounded text-lg hover:bg-neutral-300 hover:shadow-md' >See all cars</NavLink>
                     </div>
                 </div>
         )
