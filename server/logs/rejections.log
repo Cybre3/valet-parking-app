@@ -1,0 +1,90 @@
+
+--- rejection error ---
+[2023-11-13 08:31:46.728 PM]error unhandledRejection: Invalid status code: sms not sent
+stack: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: sms not sent
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse.writeHead (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:912:9)
+    at ServerResponse.end (node:_http_outgoing:1019:5)
+    at ServerResponse.send (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\response.js:232:10)
+    at C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:19:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+--- rejection error ---
+
+
+--- rejection error ---
+[2023-11-13 08:46:56.200 PM]error unhandledRejection: Invalid status code: sms not sent
+stack: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: sms not sent
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse.writeHead (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:912:9)
+    at ServerResponse.end (node:_http_outgoing:1019:5)
+    at ServerResponse.send (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\response.js:232:10)
+    at C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:19:44
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+--- rejection error ---
+
+
+--- rejection error ---
+[2023-11-13 09:04:36.512 PM]error unhandledRejection: Invalid status code: sms not sent
+stack: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: sms not sent
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse.writeHead (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:912:9)
+    at ServerResponse.end (node:_http_outgoing:1019:5)
+    at ServerResponse.send (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\response.js:232:10)
+    at C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:19:49
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+--- rejection error ---
+
+
+--- rejection error ---
+[2023-11-13 09:29:51.661 PM]error unhandledRejection: Invalid status code: message sent:
+stack: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: message sent:
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse.writeHead (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:912:9)
+    at ServerResponse.end (node:_http_outgoing:1019:5)
+    at ServerResponse.send (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\response.js:232:10)
+    at C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:24:32
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+--- rejection error ---
+
+
+--- rejection error ---
+[2023-11-13 09:32:42.112 PM]error unhandledRejection: Invalid status code: message sent:
+stack: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: message sent:
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse.writeHead (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:912:9)
+    at ServerResponse.end (node:_http_outgoing:1019:5)
+    at ServerResponse.send (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\response.js:232:10)
+    at C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:24:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+--- rejection error ---
+
+
+--- rejection error ---
+[2023-11-13 09:36:03.615 PM]error unhandledRejection: Invalid status code: message sent:
+stack: RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: message sent:
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.writeHead (node:_http_server:344:11)
+    at ServerResponse.writeHead (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\on-headers\index.js:44:26)
+    at ServerResponse._implicitHeader (node:_http_server:335:8)
+    at write_ (node:_http_outgoing:912:9)
+    at ServerResponse.end (node:_http_outgoing:1019:5)
+    at ServerResponse.send (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\response.js:232:10)
+    at C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:24:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+--- rejection error ---
+

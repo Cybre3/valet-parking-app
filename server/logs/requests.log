@@ -94,3 +94,35 @@ stack: TypeError: db.createCollection is not a function
     at newFn (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express-async-errors\index.js:16:20)
 --- request error ---
 
+
+--- request error ---
+[2023-11-13 09:14:54.032 PM] error Cyclic object value
+stack: RangeError: Cyclic object value
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:90:23)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at module.exports [as stringify] (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:292:27)
+--- request error ---
+
+
+--- request error ---
+[2023-11-13 09:18:23.948 PM] error Cyclic object value
+stack: RangeError: Cyclic object value
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:90:23)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at stringify (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:171:29)
+    at module.exports [as stringify] (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\qs\lib\stringify.js:292:27)
+--- request error ---
+

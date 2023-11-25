@@ -1,5 +1,10 @@
 {
     "name": "Valet Parking App - Development",
-    "db": "mongodb://localhost/valet-parking",
+    "db": {
+        "dbName": "test",
+        "host": "mongodb+srv",
+        "pass": "DB_PASS_TEST",
+        "user": "DB_USER_TEST"
+    },
     "env": "development"
 }

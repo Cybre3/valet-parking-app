@@ -1,7 +1,7 @@
 {
     "name": "Valet Parking - Production",
     "db": {
-        "dbName": "valet-parking",
+        "dbName": "portfolio",
         "host": "mongodb+srv",
         "pass": "DB_PASS",
         "user": "DB_USER"

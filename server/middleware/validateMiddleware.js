@@ -24,18 +24,18 @@ module.exports = (validator) => {
   function logResponseError(errorDataObj) {
     let db;
     const environment = config.get('env');
+    const { dbName, host, pass, user } = config.get('db');
 
     switch (environment) {
-        case 'production':
-            const { dbName, host, pass, user } = config.get('db');
-            db = `${host}://${process.env[user]}:${process.env[pass]}@${dbName}.gg9r8ag.mongodb.net/valet-parking?retryWrites=true&w=majority`;
-            break;
-        case 'test':
-            db = 'mongodb://localhost/valet-parking_test';
-            break;
-        case 'development':
-            db = 'mongodb://localhost/valet-parking';
-            break;
+      case 'production':
+        db = `${host}://${process.env[user]}:${process.env[pass]}@${dbName}.x17rekf.mongodb.net/valet-parking?retryWrites=true&w=majority`;
+        break;
+      case 'test':
+        db = 'mongodb://localhost/valet-parking_test';
+        break;
+      case 'development':
+        db = `${host}://${process.env[user]}:${process.env[pass]}@${dbName}.icd5mka.mongodb.net/valet-parking?retryWrites=true&w=majority`;
+        break;
     }
 
     const myResFormat = printf(({ level, label, timestamp, ...meta }) => {

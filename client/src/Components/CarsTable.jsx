@@ -13,10 +13,10 @@ class CarsTable extends PureComponent {
     ];
 
     render() {
-        const { onSort, sortColumn, cars } = this.props;
+        const { onSort, sortColumn, data } = this.props;
 
         return (
-            <Table data={cars} onSort={onSort} sortColumn={sortColumn} columns={this.columns} />
+            <Table data={data} onSort={onSort} sortColumn={sortColumn} columns={this.columns} />
         )
     }
 }

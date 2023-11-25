@@ -5,6 +5,7 @@ import { NavLink, Navigate } from 'react-router-dom';
 import Form from './common/form/Form';
 
 import { addCar, getCarByPhoneMakeModel, loadCars } from '../store/cars';
+import { sendMessage } from '../store/sms';
 
 import arrowIcon from '../assets/right-entry-arrow-icon.png';
 
@@ -33,9 +34,14 @@ class ValetEntry extends Form {
 
     doSubmit = async () => {
         try {
-            await this.props.addCar(this.state.data);
+            const car = this.state.data;
+            const message = 'Thank you for using Parkme Valet. \n To request your car, please respond to this message "READY".';
+
+
+            await this.props.addCar(car);
             await this.props.loadCars();
-            const [{ _id }] = this.props.savedCar(this.state.data);
+            const [{ _id }] = await this.props.savedCar(car);
+            this.props.sendSMS({ message, carId: _id, phone: car.phone });
 
             this.setState({ redirect: true, savedCarId: _id });
         } catch (error) {
@@ -79,6 +85,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     loadCars: () => dispatch(loadCars()),
     addCar: car => dispatch(addCar(car)),
+    sendSMS: smsObj => dispatch(sendMessage(smsObj))
 });
 
 

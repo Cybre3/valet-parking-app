@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ function CarDetails(props) {
 
     useEffect(() => {
         dispatch(loadCars());
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className='h-screen flex justify-center items-center'>

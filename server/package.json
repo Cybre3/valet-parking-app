@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "npm install",
     "auto": "nodemon index.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +26,7 @@
     "joi-phone-number": "^5.1.1",
     "mongoose": "^7.6.3",
     "morgan": "^1.10.0",
+    "twilio": "^4.19.0",
     "winston": "^3.11.0",
     "winston-mongodb": "^5.1.1"
   }

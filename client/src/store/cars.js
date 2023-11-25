@@ -11,6 +11,7 @@ const slice = createSlice({
         list: [],
         loading: false,
         lastFetch: null,
+        returnInProgress: false
     },
     reducers: {
         loading: (cars, action) => {
@@ -36,7 +37,7 @@ const slice = createSlice({
             cars.loading = false;
         },
 
-        carRemoved: (cars, action) => {
+        carReturned: (cars, action) => {
             cars.list.filter(car => car._id !== action.payload._id);
         },
 
@@ -46,7 +47,11 @@ const slice = createSlice({
 
         test: (cars, action) => {
             console.log(cars.list)
-        }
+        },
+
+        carReturnStarted: (cars, action) => {
+            cars.returnInProgress = true;
+        },
     }
 });
 
@@ -59,6 +64,8 @@ const {
     carsRequestFailed,
     loading,
     // carLotLocationAssigned,
+    carReturnStarted,
+    carReturned,
     test
 } = slice.actions;
 
@@ -101,6 +108,22 @@ export const assignCarlotLocation = (_id, lotLocation) =>
         onSuccess: test.type
     })
 
+export const startCarReturn = (_id) =>
+    apiCallBegan({
+        url: `${url}/${_id}`,
+        method: 'patch',
+        data: { returnInProgrees: true },
+        onSuccess: carReturnStarted.type,
+    })
+
+export const returnCar = _id =>
+    apiCallBegan({
+        url: `${url}/${_id}`,
+        method: 'delete',
+        data: _id,
+        onSuccess: carReturned.type
+    })
+
 // Selectors
 
 export const getCarByPhoneMakeModel = obj => createSelector(
@@ -126,4 +149,9 @@ export const getCarByPhoneMakeModel = obj => createSelector(
 export const getCarById = id => createSelector(
     state => state.entities.cars,
     cars => cars.list.filter(car => car._id === id)
+)
+
+export const getRequstedCars = createSelector(
+    state => state.entities.cars,
+    cars => cars.list.filter(car => car.requested)
 )

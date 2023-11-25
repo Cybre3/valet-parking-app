@@ -7,6 +7,7 @@ const { printf, combine, label, prettyPrint, colorize } = format;
 
 const errors = require('../middleware/errorMiddleware');
 const carsRoute = require('../routes/carsRoute');
+const smsRoute = require('../routes/smsRoute');
 
 const myFormat = printf(({ level, message }) => {
     return `${level}: ${message}`;
@@ -29,5 +30,6 @@ module.exports = function (app) {
     );
 
     app.use('/api/cars', carsRoute);
+    app.use('/api/sms', smsRoute);
     app.use(errors);
 }
