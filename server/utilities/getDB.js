@@ -1,7 +1,7 @@
 module.exports = function getDB(app) {
     let db;
     const environment = app.get('env');
-    const { dbName, host, pass, user } = config.get('db');
+    const { dbName, host, pass, user } = app.get('db');
 
     switch (environment) {
         case 'production':
