@@ -1,8 +1,10 @@
+const config = require('config');
+
 module.exports = function getDB(app) {
     let db;
     const environment = app.get('env');
-    const { dbName, host, pass, user } = app.get('db');
-
+    const { dbName, host, pass, user } = config.get('db');
+    
     switch (environment) {
         case 'production':
             db = `${host}://${process.env[user]}:${process.env[pass]}@${dbName}.x17rekf.mongodb.net/valet-parking?retryWrites=true&w=majority`;
