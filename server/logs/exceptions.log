@@ -2319,3 +2319,343 @@ SyntaxError: Unexpected token '{'
     at Module._compile (node:internal/modules/cjs/loader:1254:14)
 --- undefined error ---
 
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected number
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:48
+                Nov 26 12:01:18 AM    ToCountry: 'US',
+                    ^^
+
+SyntaxError: Unexpected number
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:49
+                    ToState: '',
+                           ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:49
+                   ToState: '',
+                          ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:49
+                   ToState: '',
+                          ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:40
+                let carIsInSystem = await Car.findOne({ phone, make, model });
+                                    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:40
+                let carIsInSystem = await Car.findOne({ phone, make, model });
+                                    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:40
+                let carIsInSystem = await Car.findOne({ phone, make, model });
+                                    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:42
+                let carIsInSystem = await Car.findOne({ phone, make, model });
+                                    ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:43
+            let carIsInSystem = await Car.findOne({ phone, make, model });
+                                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:44
+            let carIsInSystem = await Car.findOne({ phone, make, model });
+                                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:43
+            let carIsInSystem = await Car.findOne({ phone, make, model });
+                                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:42
+            let carIsInSystem = await Car.findOne({ phone, make, model });
+                                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:42
+            let carIsInSystem = await Car.findOne({ phone, make, model });
+                                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in destructuring declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:5
+const {Car}
+      ^^^^^
+
+SyntaxError: Missing initializer in destructuring declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'if'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:41
+            if (!readyReg.test(Body))
+            ^^
+
+SyntaxError: Unexpected token 'if'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token 'if'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:41
+            if (!readyReg.test(Body))
+            ^^
+
+SyntaxError: Unexpected token 'if'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ';'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:45
+            if (!carIsInSystem) return [res.status(404).send('Car not found.');
+                                                                              ^
+
+SyntaxError: Unexpected token ';'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
