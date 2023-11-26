@@ -34,7 +34,7 @@ module.exports = {
             const twiml = new MessagingResponse();
             const readyReg = new RegExp('ready', 'i');
 
-            if (req.body.Body === readyReg) {
+            if (readyReg.test(req.body.Body)) {
                 twiml.message('Your car is on the way!');
             }
             else {
