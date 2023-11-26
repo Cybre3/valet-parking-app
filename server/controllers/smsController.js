@@ -40,7 +40,7 @@ module.exports = {
 
             if (!readyReg.test(Body)) {
                 twiml.message('Are you ready for your car to be returned?');
-                return;
+                return res.status(400).send('Invalid Response.');
             }
 
             let carIsInSystem = await Car.findOne({ phone });
