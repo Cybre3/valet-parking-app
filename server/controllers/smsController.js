@@ -3,6 +3,8 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
+const { Car } = require('../models/carModel');
+
 module.exports = {
     post: {
         sendSMS: (req, res) => {
@@ -30,20 +32,26 @@ module.exports = {
             */
         },
 
-        receiveSMS: (req, res) => {
+        receiveSMS: async (req, res) => {
             const twiml = new MessagingResponse();
             const readyReg = new RegExp('ready', 'i');
+            const { Body } = req.body;
 
-            if (readyReg.test(req.body.Body)) {
-                
-                twiml.message('Your car is on the way!');
+            if (readyReg.test(Body)) {
+                const phone = req.body.From.replace("+1", "");
+
+                let carIsInSystem = await Car.findOne({ phone });
+                if (!carIsInSystem) {
+                    twiml.message('Your car has already been returned or you have not stored your car.')
+                } else {
+                    carIsInSystem.returnInProgress = true;
+                    twiml.message('Your car is on the way!');
+                }
+
+            } else {
+                twiml.message('Are you ready for your car to be returned?');
             }
-            else {
-                twiml.message(
-                    'Are you ready for your car to be returned?'
-                );
-            }
-     
+
             res.status(200).type('text/xml').send(twiml.toString());
         }
     }
