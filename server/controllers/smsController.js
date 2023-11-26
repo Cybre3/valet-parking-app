@@ -41,7 +41,7 @@ module.exports = {
                     'Are you ready for your car to be returned?'
                 );
             }
-
+            console.log(req.body)
             // client.messages
             //     .create({
             //         from: '18446211510',
