@@ -17,6 +17,7 @@ module.exports = function (app) {
     app.disable('x-powered-by');
     app.disable('X-Powered-By');
     app.use(express.json());
+    app.use(express.urlencoded({extended: true}))
 
     if (app.get('env') === 'development' || app.get('env') === 'production') {
         app.use(morgan('tiny'));

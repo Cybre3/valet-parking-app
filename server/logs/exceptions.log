@@ -2230,3 +2230,32 @@ SyntaxError: Unexpected token '.'
     at Module._compile (node:internal/modules/cjs/loader:1254:14)
 --- undefined error ---
 
+
+--- undefined error ---
+[undefined]error uncaughtException: bodyParser is not defined
+stack: ReferenceError: bodyParser is not defined
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:20:13)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:40)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Most middleware (like bodyParser) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+stack: Error: Most middleware (like bodyParser) is no longer bundled with Express and must be installed separately. Please see https://github.com/senchalabs/connect#middleware.
+    at Function.get (C:\Users\cybre\Documents\valet-parking-app\server\node_modules\express\lib\express.js:112:13)
+    at module.exports (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:20:21)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\index.js:10:40)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+--- undefined error ---
+
