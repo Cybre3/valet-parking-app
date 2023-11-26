@@ -61,9 +61,7 @@ module.exports = {
             //     .catch(err => {
             //         res.status(400).send({ smsErrorCode: err.code, smsErrorMessage: err.message })
             //     });
-            res.status(200).type('text/xml').send({
-                body: req.body
-            });
+            res.status(200).type('text/xml').send(twiml.toString());
         }
     }
 }
