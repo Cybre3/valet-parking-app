@@ -2759,3 +2759,23 @@ SyntaxError: Unexpected token 'return'
     at Module._compile (node:internal/modules/cjs/loader:1254:14)
 --- undefined error ---
 
+
+--- undefined error ---
+[undefined]error uncaughtException: await is only valid in async functions and the top level bodies of modules
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:42
+            let carIsInSystem = await Car.findOne({ phone, make, model });
+                                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
