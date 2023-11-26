@@ -2,7 +2,6 @@ const { MessagingResponse } = require('twilio').twiml;
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
-// const twiml = new MessagingResponse();
 
 module.exports = {
     post: {
@@ -29,6 +28,22 @@ module.exports = {
             
                 // res.type('text/xml').send(twiml.toString());
             */
+        },
+
+        receiveSMS: (req, res) => {
+            const twiml = new MessagingResponse();
+
+            if (req.body.Body == 'ready') {
+                console.log(req.body)
+                twiml.message('Your car is on the way!');
+            }
+            else {
+                twiml.message(
+                    'Are you ready for your car to be returned?'
+                );
+            }
+
+            res.type('text/xml').send(twiml.toString());
         }
     }
 }

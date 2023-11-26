@@ -112,7 +112,7 @@ export const startCarReturn = (_id) =>
     apiCallBegan({
         url: `${url}/${_id}`,
         method: 'patch',
-        data: { returnInProgrees: true },
+        data: { returnInProgress: true },
         onSuccess: carReturnStarted.type,
     })
 

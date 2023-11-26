@@ -11,7 +11,11 @@ const carSchema = new Schema({
     phone: String,
     make: String,
     model: String,
-    lotLocation: String
+    lotLocation: String,
+    returnInProgress: {
+        type: String,
+        default: false
+    }
 });
 
 markAllRequired(carSchema);
