@@ -36,23 +36,27 @@ module.exports = {
             const twiml = new MessagingResponse();
             const readyReg = new RegExp('ready', 'i');
             const { Body } = req.body;
-            const phone = req.body.From.replace("+1", "");
+            let status;
+            
+            if (readyReg.test(Body)) {
+                const phone = req.body.From.replace("+1", "");
+                
+                let carIsInSystem = await Car.findOne({ phone });
+                if (!carIsInSystem) {
+                    twiml.message('Your car has already been returned or you have not stored your car.')
+                    status = 404;
+                } else {
+                    carIsInSystem.returnInProgress = true;
+                    twiml.message('Your car is on the way!');
+                    status = 200;
+                }
 
-            if (!readyReg.test(Body)) {
+            } else {
                 twiml.message('Are you ready for your car to be returned?');
-                return res.status(400).send('Invalid Response.');
+                status = 400;
             }
 
-            let carIsInSystem = await Car.findOne({ phone });
-            if (!carIsInSystem) {
-                twiml.message('Your car has already been returned or you have not stored your car.')
-                return res.status(404).send('Car not found.')
-            }
-
-            carIsInSystem.returnInProgress = true;
-            twiml.message('Your car is on the way!');
-
-            res.status(200).type('text/xml').send(twiml.toString());
+            res.status(status).type('text/xml').send(twiml.toString());
         }
     }
 }
