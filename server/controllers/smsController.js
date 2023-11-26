@@ -32,8 +32,9 @@ module.exports = {
 
         receiveSMS: (req, res) => {
             const twiml = new MessagingResponse();
+            const readyReg = new RegExp('ready', 'i');
 
-            if (req.body.Body == /ready/i) {
+            if (req.body.Body === readyReg) {
                 twiml.message('Your car is on the way!');
             }
             else {
