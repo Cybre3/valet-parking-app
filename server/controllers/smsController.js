@@ -34,7 +34,6 @@ module.exports = {
             const twiml = new MessagingResponse();
 
             if (req.body.Body == 'ready') {
-                console.log(req.body)
                 twiml.message('Your car is on the way!');
             }
             else {
@@ -43,7 +42,28 @@ module.exports = {
                 );
             }
 
-            res.type('text/xml').send(twiml.toString());
+            // client.messages
+            //     .create({
+            //         from: '18446211510',
+            //         body: twiml.toString(),
+            //         to: '16098151154'
+            //     })
+            //     .then(message => {
+            //         res
+            //             .status(200)
+            //             .type('text/xml')
+            //             .send({ 
+            //                 smsStatusCode: message.status, messageInfo: message.sid, 
+            //                 msg: message.body, 
+            //                 info: message 
+            //             })
+            //     })
+            //     .catch(err => {
+            //         res.status(400).send({ smsErrorCode: err.code, smsErrorMessage: err.message })
+            //     });
+            res.status(200).type('text/xml').send({
+                body: req.body
+            });
         }
     }
 }
