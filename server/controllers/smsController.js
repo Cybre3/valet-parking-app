@@ -35,8 +35,8 @@ module.exports = {
         receiveSMS: async (req, res) => {
             const twiml = new MessagingResponse();
             const readyReg = new RegExp('ready', 'i');
-            const { From, Body } = req.body;
-            const phone = From.replace("+1", "");
+            const { Body } = req.body;
+            const phone = req.body.From.replace("+1", "");
 
             if (!readyReg.test(Body)) {
                 twiml.message('Are you ready for your car to be returned?');
