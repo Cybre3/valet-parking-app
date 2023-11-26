@@ -38,14 +38,16 @@ module.exports = {
             const { From, Body } = req.body;
             const phone = From.replace("+1", "");
 
-            if (!readyReg.test(Body))
-                return twiml.message('Are you ready for your car to be returned?');
+            if (!readyReg.test(Body)) {
+                twiml.message('Are you ready for your car to be returned?');
+                return;
+            }
 
             let carIsInSystem = await Car.findOne({ phone });
-            if (!carIsInSystem) return [
-                twiml.message('Your car has already been returned or you have not stored your car.'),
-                res.status(404).send('Car not found.')
-            ];
+            if (!carIsInSystem) {
+                twiml.message('Your car has already been returned or you have not stored your car.')
+                return res.status(404).send('Car not found.')
+            }
 
             carIsInSystem.returnInProgress = true;
             twiml.message('Your car is on the way!');
