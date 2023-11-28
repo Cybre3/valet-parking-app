@@ -2,7 +2,7 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 
 import configureStore from '../configureStore';
-import { addCar, getCarByPhoneMakeModel, loadCars } from '../cars';
+import { addCar, getCarByPhoneMakeModel, getRequstedCars, loadCars } from '../cars';
 
 describe('carsSlice', () => {
     let fakeAxios;
@@ -73,7 +73,7 @@ describe('carsSlice', () => {
         const savedCar1 = { ...car1, id: 1 };
         const savedCar2 = { ...car2, id: 1 };
 
-        fakeAxios.onPost('/cars').reply(200, savedCar1);        
+        fakeAxios.onPost('/cars').reply(200, savedCar1);
         await store.dispatch(addCar(car1));
 
         fakeAxios.onPost('/cars').reply(400, savedCar2);
@@ -99,4 +99,20 @@ describe('carsSlice', () => {
         const [currentCar] = getCarByPhoneMakeModel(car2)(store.getState());
         expect(currentCar).toEqual(savedCar2);
     });
+
+    describe('Selectors', () => {
+        it('Should get requested cars', () => {
+            const state = createState();
+            state.entities.cars.list = [
+                { id: 1, returnInProgress: true },
+                { id: 2 },
+                { id: 3, returnInProgress: true },
+                { id: 4 }
+            ];
+            
+            const result = getRequstedCars(state);
+
+            expect(result).toHaveLength(2);
+        })
+    })
 });

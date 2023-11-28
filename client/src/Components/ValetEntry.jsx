@@ -1,6 +1,6 @@
 import Joi from 'joi-browser'
 import { connect } from 'react-redux';
-import { NavLink, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 import Form from './common/form/Form';
 
@@ -59,6 +59,9 @@ class ValetEntry extends Form {
 
                     <div className='entry-box w-fit border-4 rounded-md p-10 shadow-lg bg-neutral-50'>
                         <form onSubmit={this.handleSubmit} className='space-y-12'>
+
+                            <h2 className='font-bold text-center w-full text-2xl tracking-wider'>New Car Entry</h2>
+
                             <div className='flex space-x-6'>
                                 {this.renderInput('phone', 'Phone', 'phone')}
                                 {this.renderInput('date', 'Date', 'date')}
@@ -70,7 +73,7 @@ class ValetEntry extends Form {
                             </div>
                             {this.renderButton(this.submitBtn(), '', 'valetBtn', 'bg-transparent')}
                         </form>
-                        <NavLink to='/cars' className='bg-neutral-400 px-4 py-2 w-fit rounded text-lg hover:bg-neutral-300 hover:shadow-md' >See all cars</NavLink>
+
                     </div>
                 </div>
         )

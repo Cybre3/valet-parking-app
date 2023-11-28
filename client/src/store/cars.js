@@ -49,9 +49,6 @@ const slice = createSlice({
             console.log(cars.list)
         },
 
-        carReturnStarted: (cars, action) => {
-            cars.returnInProgress = true;
-        },
     }
 });
 
@@ -64,7 +61,6 @@ const {
     carsRequestFailed,
     loading,
     // carLotLocationAssigned,
-    carReturnStarted,
     carReturned,
     test
 } = slice.actions;
@@ -87,7 +83,7 @@ export const loadCars = () => (dispatch, getState) => {
             onStart: carsRequested.type,
             onSuccess: carsReceived.type,
             onError: carsRequestFailed.type
-        }))
+        }));
 
 }
 
@@ -106,14 +102,6 @@ export const assignCarlotLocation = (_id, lotLocation) =>
         method: 'patch',
         data: lotLocation,
         onSuccess: test.type
-    })
-
-export const startCarReturn = (_id) =>
-    apiCallBegan({
-        url: `${url}/${_id}`,
-        method: 'patch',
-        data: { returnInProgress: true },
-        onSuccess: carReturnStarted.type,
     })
 
 export const returnCar = _id =>
@@ -153,5 +141,5 @@ export const getCarById = id => createSelector(
 
 export const getRequstedCars = createSelector(
     state => state.entities.cars,
-    cars => cars.list.filter(car => car.requested)
-)
+    cars => cars.list.filter(car => car.returnInProgress === true)
+);

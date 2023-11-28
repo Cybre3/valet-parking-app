@@ -6,7 +6,6 @@ import CarsTable from './CarsTable';
 
 import withRouter from '../utilities/withRouter';
 import { loadCars } from '../store/cars';
-import { NavLink } from 'react-router-dom';
 
 class Cars extends PureComponent {
     state = {
@@ -37,9 +36,7 @@ class Cars extends PureComponent {
         return (
             <div className='h-screen flex justify-center items-center'>
                 <div className='bg-neutral-50 border-2 rounded-md shadow-lg w-fit'>
-                    <NavLink to='/' className='bg-neutral-400 px-4 py-1 w-fit rounded ml-auto mr-2 mt-2 text-lg block hover:bg-neutral-300 hover:shadow-md'>
-                        New Car
-                    </NavLink>
+                <h2 className='font-bold text-center w-full mt-10 text-2xl tracking-wider'>All Cars</h2>
                     <div className='p-10 px-5'>
                         <CarsTable data={cars} sortColumn={sortColumn} onSort={this.handleSort} />
                     </div>
