@@ -14,7 +14,6 @@ class Cars extends PureComponent {
 
     componentDidMount() {
         this.props.loadCars();
-        console.log(this.props.requestedCars)
     }
 
     handleSort = sortColumn => {
