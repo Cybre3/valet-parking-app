@@ -10,7 +10,7 @@ import { loadCars } from '../store/cars';
 class Cars extends PureComponent {
     state = {
         sortColumn: { path: 'make', order: 'asc' }
-    }   
+    }
 
     componentDidMount() {
         this.props.loadCars();
@@ -36,9 +36,9 @@ class Cars extends PureComponent {
         return (
             <div className='h-screen flex justify-center items-center'>
                 <div className='bg-neutral-50 border-2 rounded-md shadow-lg w-fit'>
-                <h2 className='font-bold text-center w-full mt-10 text-2xl tracking-wider'>All Cars</h2>
+                    <h2 className='font-bold text-center w-full mt-10 text-2xl tracking-wider'>All Cars</h2>
                     <div className='p-10 px-5'>
-                        <CarsTable data={cars} sortColumn={sortColumn} onSort={this.handleSort} />
+                        <CarsTable data={cars.length === 0 ? [] : cars} sortColumn={sortColumn} onSort={this.handleSort} />
                     </div>
                 </div>
             </div>

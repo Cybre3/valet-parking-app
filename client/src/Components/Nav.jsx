@@ -11,7 +11,7 @@ const Nav = () => {
         <div className="bg-neutral-50 flex flex-col w-[15%] h-screen absolute">
             <div className="flex flex-col w-full mt-[60%] space-y-2">
                 {
-                    links.map(link => <NavLink className='text-xl hover:bg-[#00008b] hover:text-white p-4 pl-10 font-bold tracking-wide' to={link.path}>{link.label}</NavLink>)
+                    links.map(link => <NavLink key={link.id} className='text-xl hover:bg-[#00008b] hover:text-white p-4 pl-10 font-bold tracking-wide' to={link.path}>{link.label}</NavLink>)
                 }
             </div>
             <div className="mt-auto border-4 border-[#00008b] m-1">
