@@ -45,6 +45,7 @@ module.exports = {
                     twiml.message('Your car has already been returned or you have not stored your car.')
                 } else {
                     carIsInSystem.returnInProgress = true;
+                    await carIsInSystem.save();
                     twiml.message('Your car is on the way!');
                 }
 
