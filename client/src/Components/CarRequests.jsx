@@ -15,7 +15,7 @@ class Cars extends PureComponent {
     componentDidMount() {
         this.props.loadCars();
     }
-
+    
     handleSort = sortColumn => {
         this.setState({ sortColumn })
     }
@@ -25,15 +25,14 @@ class Cars extends PureComponent {
         const { requestedCars: allCars } = this.props;
         let filtered = allCars;
         const sorted = _.orderBy(filtered, [sortColumn.path], [sortColumn.order]);
-
+        
         return { data: sorted }
     }
-
+    
     render() {
         const { sortColumn } = this.state;
-        const { data: cars } = this.getPageData();
-
-
+        const { data: cars } = this.getPageData();        
+        
         return (
             <div className='h-screen flex justify-center items-center'>
                 <div className='bg-neutral-50 border-2 rounded-md shadow-lg w-fit'>

@@ -13,7 +13,7 @@ const carSchema = new Schema({
     model: String,
     lotLocation: String,
     returnInProgress: {
-        type: String,
+        type: Boolean,
         default: false
     }
 });
