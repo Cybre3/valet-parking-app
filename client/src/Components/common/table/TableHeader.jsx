@@ -27,7 +27,7 @@ function TableHeader(props) {
                 {
                     props.columns.map(col => (
                         <th
-                            className='cursor-pointer px-4 py-2 text-lg'
+                            className='cursor-pointer px-4 py-2 text-md'
                             key={col.path || col.key}
                             onClick={() => raiseSort(col.path)}
                         >

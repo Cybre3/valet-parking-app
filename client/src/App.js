@@ -18,7 +18,7 @@ const store = configureStore();
 function App() {
   return (
     <Provider store={store}>
-      <i className='mx-auto w-full text-center absolute top-20 text-5xl font-bold text-white'>ParkMe Valet</i>
+      <i className='mx-auto w-full text-center absolute top-20 text-4xl font-bold text-white'>ParkMe Valet</i>
       <Nav />
       <Routes>
         <Route path='/' element={<Login />} />

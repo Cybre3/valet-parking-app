@@ -57,10 +57,10 @@ class ValetEntry extends Form {
                 <Navigate to={`/lotLocation/${this.state.savedCarId}`} /> :
                 <div className="flex justify-center items-center h-screen">
 
-                    <div className='entry-box w-fit border-4 rounded-md p-10 shadow-lg bg-neutral-50'>
-                        <form onSubmit={this.handleSubmit} className='space-y-12'>
+                    <div className='entry-box w-fit border-4 rounded-md p-8 shadow-lg bg-neutral-50'>
+                        <form onSubmit={this.handleSubmit} className='space-y-10 text-sm'>
 
-                            <h2 className='font-bold text-center w-full text-2xl tracking-wider'>New Car Entry</h2>
+                            <h2 className='font-bold text-center w-full text-xl tracking-wide'>New Car Entry</h2>
 
                             <div className='flex space-x-6'>
                                 {this.renderInput('phone', 'Phone', 'phone')}
