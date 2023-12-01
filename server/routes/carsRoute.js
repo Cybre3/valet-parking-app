@@ -10,4 +10,6 @@ router.post('/', validator(validateCar), carsController.post.addCar);
 
 router.patch('/:id', carsController.patch.assignCarLotLocation);
 
+router.delete('/:id', carsController.delete.deleteCar);
+
 module.exports = router;

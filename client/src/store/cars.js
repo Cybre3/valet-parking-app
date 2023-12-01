@@ -108,7 +108,6 @@ export const returnCar = _id =>
     apiCallBegan({
         url: `${url}/${_id}`,
         method: 'delete',
-        data: _id,
         onSuccess: carReturned.type
     })
 

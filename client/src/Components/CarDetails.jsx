@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
-import { getCarById, loadCars } from '../store/cars';
+import { getCarById, loadCars, returnCar } from '../store/cars';
 import colourNameToHex from '../utilities/varColors';
 
 function CarDetails(props) {
@@ -13,6 +13,11 @@ function CarDetails(props) {
     useEffect(() => {
         dispatch(loadCars());
     }, [dispatch]);
+
+    const handleDelete = id => {
+        dispatch(returnCar(id));
+        window.location = '/cars';
+    }
 
     return (
         <div className='h-screen flex justify-center items-center'>
@@ -42,7 +47,9 @@ function CarDetails(props) {
                                         {'Back to cars'}
                                     </span>
                                 </NavLink>
-                                <button className='bg-neutral-400 px-4 py-1 w-fit rounded hover:bg-neutral-300 hover:shadow-md'>Return Car</button>
+                                <button onClick={() => handleDelete(_id)} className='bg-neutral-400 px-4 py-1 w-fit rounded hover:bg-neutral-300 hover:shadow-md'>
+                                    Return Car
+                                </button>
                             </div>
                         </div>
                     ))

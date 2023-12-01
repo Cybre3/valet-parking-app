@@ -8,12 +8,12 @@ const { Car } = require('../models/carModel');
 module.exports = {
     post: {
         sendSMS: (req, res) => {
-            const { message } = req.body;
+            const { message, phone } = req.body;
             client.messages
                 .create({
                     from: '18446211510',
                     body: message,
-                    to: '16098151154'
+                    to: `1${phone}`
                 })
                 .then(message => {
                     res.status(200).send({ smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
@@ -32,7 +32,7 @@ module.exports = {
             */
         },
 
-        receiveSMS: async (req, res) => {
+        receiveCarRequestSMS: async (req, res) => {
             const twiml = new MessagingResponse();
             const readyReg = new RegExp('ready', 'i');
             const { Body } = req.body;
@@ -45,7 +45,7 @@ module.exports = {
                     twiml.message('Your car has already been returned or you have not stored your car.')
                 } else {
                     await Car.findOneAndUpdate({ phone }, { returnInProgress: true })
-                    twiml.message('Your car is on the way!');
+                    twiml.message('We have let the Valet Service know you have requested your vehicle. Hang tight, your vehicle will be returned to you shortly.');
                 }
 
             } else {
@@ -53,6 +53,8 @@ module.exports = {
             }
 
             res.status(200).type('text/xml').send(twiml.toString());
-        }
+        },
+
+        sendCarInTransitSMS
     }
 }

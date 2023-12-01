@@ -36,5 +36,16 @@ module.exports = {
 
             res.status(200).send(carIsInSystem);
         }
+    },
+
+    delete: {
+        deleteCar: async (req, res) => {
+            const { id } = req.params;
+
+            let carIsInSystem = await Car.findByIdAndDelete({ _id: id });
+            if (!carIsInSystem) return res.status(404).send('Car not found.');
+
+            res.status(200).send(`Car Deleted`);
+        }
     }
 }
