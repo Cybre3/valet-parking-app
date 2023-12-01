@@ -55,6 +55,6 @@ module.exports = {
             res.status(200).type('text/xml').send(twiml.toString());
         },
 
-        sendCarInTransitSMS
+        // sendCarInTransitSMS
     }
 }
