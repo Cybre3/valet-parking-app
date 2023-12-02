@@ -24,7 +24,7 @@ function App() {
       <i className={`absolute left-0 right-0 mx-auto top-20 text-4xl font-bold text-white ${margin} text-center`}>ParkMe Valet</i>
       <Nav />
       <Routes>
-        <Route path='/' element={<Navigate replace to='/cars' />} />
+        <Route path='/' element={<Navigate replace to='/cars/addcar' />} />
         <Route path='/login' element={<Login />} />
         <Route path='/lotLocation/:id' element={<LotLocation />} />
         <Route path='/cars' element={<Cars />} />
