@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     const links = [
-        { id: 1, path: '/newcar', label: 'Add New Car' },
+        { id: 1, path: '/cars/addcar', label: 'Add New Car' },
         { id: 2, path: '/cars/requested', label: 'Requested Cars' },
         { id: 3, path: '/cars', label: 'View All Cars' },
     ]

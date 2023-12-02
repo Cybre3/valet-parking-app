@@ -17,6 +17,7 @@ class ValetEntry extends Form {
             phone: '',
             make: '',
             model: '',
+            // carEnteredBy: ''
         },
         redirect: false,
         savedCarId: '',
@@ -37,7 +38,6 @@ class ValetEntry extends Form {
             const car = this.state.data;
             const message = 'Thank you for using Parkme Valet. \n To request your car, please respond to this message "READY".';
 
-
             await this.props.addCar(car);
             await this.props.loadCars();
             const [{ _id }] = await this.props.savedCar(car);
@@ -55,7 +55,7 @@ class ValetEntry extends Form {
         return (
             this.state.redirect ?
                 <Navigate to={`/lotLocation/${this.state.savedCarId}`} /> :
-                <div className="flex justify-center items-center h-screen">
+                <div className="flex justify-center items-center h-screen ml-[15%] overflow-hidden">
 
                     <div className='entry-box w-fit border-4 rounded-md p-8 shadow-lg bg-neutral-50'>
                         <form onSubmit={this.handleSubmit} className='space-y-10 text-sm'>

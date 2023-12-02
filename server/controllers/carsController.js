@@ -32,6 +32,7 @@ module.exports = {
             if (!carIsInSystem) return res.status(404).send('Car not found.');
 
             carIsInSystem.lotLocation = lotLocation;
+            carIsInSystem.timeParked = `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
             await carIsInSystem.save();
 
             res.status(200).send(carIsInSystem);

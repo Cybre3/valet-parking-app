@@ -6,16 +6,49 @@ const JoiPhone = Joi.extend(require('joi-phone-number'));
 const markAllRequired = require('../utilities/makeAllRequired')
 
 const carSchema = new Schema({
-    date: String,
-    color: String,
-    phone: String,
-    make: String,
-    model: String,
-    lotLocation: String,
+    date: {
+        type: String,
+        required: true
+    },
+    color: {
+        type: String,
+        required: true
+    },
+    phone: {
+        type: String,
+        required: true
+    },
+    make: {
+        type: String,
+        required: true
+    },
+    model: {
+        type: String,
+        required: true
+    },
+    lotLocation: {
+        type: String,
+        default: 'NOT PARKED'
+    },
+    carRequested: {
+        type: Boolean,
+        default: false
+    },
     returnInProgress: {
         type: Boolean,
         default: false
-    }
+    },
+    timeOfEntry: {
+        type: String,
+        default: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`
+    },
+    timeParked: String,
+    timeRequested: String,
+    timeReturned: String,
+    carEnteredBy: String, // should be employee model, make required
+    carParkedBy: String, // should be employee model
+    carRemoveFromLotBy: String, // should be employee model
+    carReturnedToCustomerBy: String, // should be employee model
 });
 
 markAllRequired(carSchema);

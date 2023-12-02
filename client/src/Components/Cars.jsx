@@ -29,12 +29,16 @@ class Cars extends PureComponent {
         return { data: sorted }
     }
 
+    calcMargin = () => {
+        return window.screen.width * 0.15;
+    }
+
     render() {
         const { sortColumn } = this.state;
         const { data: cars } = this.getPageData();
 
         return (
-            <div className='h-screen flex justify-center items-center'>
+            <div className={`h-screen flex justify-center items-center ml-[15%]`}>
                 <div className='bg-neutral-50 border-2 rounded-md shadow-lg w-fit'>
                     <h2 className='font-bold text-center w-full mt-10 text-xl tracking-wider'>All Cars</h2>
                     <div className='p-10 px-5'>

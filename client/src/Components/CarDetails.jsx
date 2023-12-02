@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
 import { getCarById, loadCars, returnCar } from '../store/cars';
+import { sendCarInTransitSMS } from '../store/sms';
 import colourNameToHex from '../utilities/varColors';
 
 function CarDetails(props) {
@@ -19,11 +20,22 @@ function CarDetails(props) {
         window.location = '/cars';
     }
 
+    const handleCarInTransit = phone => {
+        const message = 'Your car is on the way!';
+
+        try {
+            dispatch(sendCarInTransitSMS({ message, carId: params.id, phone }))
+        } catch (error) {
+            console.log(error.message)
+        }
+
+    }
+
     return (
-        <div className='h-screen flex justify-center items-center'>
+        <div className='h-screen flex justify-center items-center ml-[15%]'>
             <div className='w-fit border-2 rounded-md shadow-lg py-2 bg-neutral-50'>
                 {
-                    car.map(({ make, model, color, _id, phone, lotLocation }) => (
+                    car.map(({ make, model, color, _id, phone, lotLocation, returnInProgress }) => (
                         <div key={_id}>
                             <div className='px-4 py-1 space-x-2'>
                                 <span className='text-lg font-bold'>Phone#</span>
@@ -47,9 +59,15 @@ function CarDetails(props) {
                                         {'Back to cars'}
                                     </span>
                                 </NavLink>
-                                <button onClick={() => handleDelete(_id)} className='bg-neutral-400 px-4 py-1 w-fit rounded hover:bg-neutral-300 hover:shadow-md'>
-                                    Return Car
-                                </button>
+                                {
+                                    !returnInProgress ?
+                                        <button onClick={() => handleCarInTransit(phone)} className='bg-neutral-400 px-4 py-1 w-fit rounded hover:bg-neutral-300 hover:shadow-md'>
+                                            Car In Transit
+                                        </button> :
+                                        <button onClick={() => handleDelete(_id)} className='bg-neutral-400 px-4 py-1 w-fit rounded hover:bg-neutral-300 hover:shadow-md'>
+                                            Return Car
+                                        </button>
+                                }
                             </div>
                         </div>
                     ))

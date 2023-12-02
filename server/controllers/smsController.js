@@ -44,7 +44,8 @@ module.exports = {
                 if (!carIsInSystem) {
                     twiml.message('Your car has already been returned or you have not stored your car.')
                 } else {
-                    await Car.findOneAndUpdate({ phone }, { returnInProgress: true })
+                    await Car.findOneAndUpdate({ phone }, { carRequested: true, timeRequested: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}` })
+
                     twiml.message('We have let the Valet Service know you have requested your vehicle. Hang tight, your vehicle will be returned to you shortly.');
                 }
 
@@ -55,6 +56,24 @@ module.exports = {
             res.status(200).type('text/xml').send(twiml.toString());
         },
 
-        // sendCarInTransitSMS
+        sendCarInTransitSMS: (req, res) => {
+            const { message, phone } = req.body;
+
+            client.messages
+                .create({
+                    from: '18446211510',
+                    body: message,
+                    to: `1${phone}`
+                })
+                .then(async message => {
+                    await Car.findOneAndUpdate({ phone }, { returnInProgress: true });
+
+                    res.status(200).send({ smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                })
+                .catch(err => {
+                    res.status(400).send({ smsErrorCode: err.code, smsErrorMessage: err.message })
+                });
+
+        }
     }
 }

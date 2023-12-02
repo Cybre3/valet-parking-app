@@ -40,7 +40,7 @@ class ValetEntry extends Form {
     doSubmit = async () => {
         try {
             await this.props.assignCarlotLocation(this.props.params.id, this.state.data);
-            this.props.loadCars()
+            window.location = '/cars';
         } catch (error) {
             console.log(error)
         }
@@ -50,7 +50,7 @@ class ValetEntry extends Form {
 
     render() {
         return (
-            <div className='h-screen flex justify-center items-center'>
+            <div className='h-screen flex justify-center items-center ml-[15%]'>
                 <div className='entry-box w-fit border-4 rounded-md p-10 shadow-lg bg-neutral-50'>
                     <form onSubmit={this.handleSubmit} className='space-y-12'>
                         <div className='space-y-6 flex flex-col items-center'>

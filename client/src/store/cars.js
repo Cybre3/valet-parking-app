@@ -89,7 +89,7 @@ export const loadCars = () => (dispatch, getState) => {
 
 export const addCar = car =>
     apiCallBegan({
-        url,
+        url: `${url}/addcar`,
         method: 'post',
         data: car,
         onStart: loading.type,

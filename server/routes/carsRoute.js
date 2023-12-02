@@ -6,7 +6,7 @@ const { validate: validateCar } = require('../models/carModel');
 
 router.get('/', carsController.get.allCars);
 
-router.post('/', validator(validateCar), carsController.post.addCar);
+router.post('/addcar', validator(validateCar), carsController.post.addCar);
 
 router.patch('/:id', carsController.patch.assignCarLotLocation);
 
