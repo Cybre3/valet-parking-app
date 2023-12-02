@@ -1,6 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Nav = () => {
+    const location = useLocation();
+
+    if(['/login'].includes(location.pathname)) return <></>;
+
     const links = [
         { id: 1, path: '/cars/addcar', label: 'Add New Car' },
         { id: 2, path: '/cars/requested', label: 'Requested Cars' },

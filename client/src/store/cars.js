@@ -140,5 +140,5 @@ export const getCarById = id => createSelector(
 
 export const getRequstedCars = createSelector(
     state => state.entities.cars,
-    cars => cars.list.filter(car => car.returnInProgress === true)
+    cars => cars.list.filter(car => car.carRequested === true)
 );

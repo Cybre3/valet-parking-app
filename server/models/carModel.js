@@ -35,13 +35,10 @@ const carSchema = new Schema({
         default: false
     },
     returnInProgress: {
-        type: Boolean,
+        type: Boolean,          
         default: false
     },
-    timeOfEntry: {
-        type: String,
-        default: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`
-    },
+    timeOfEntry: String,
     timeParked: String,
     timeRequested: String,
     timeReturned: String,

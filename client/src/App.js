@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 
 import configureStore from './store/configureStore';
 
@@ -16,12 +16,16 @@ import Login from './Components/Login';
 const store = configureStore();
 
 function App() {
+  const location = useLocation();
+  const margin = location.pathname === '/login' ? 'ml-0' : 'ml-[15%]'
+
   return (
     <Provider store={store}>
-      <i className='absolute left-0 right-0 mx-auto top-20 text-4xl font-bold text-white ml-[15%] text-center'>ParkMe Valet</i>
+      <i className={`absolute left-0 right-0 mx-auto top-20 text-4xl font-bold text-white ${margin} text-center`}>ParkMe Valet</i>
       <Nav />
       <Routes>
-        <Route path='/' element={<Login />} />
+        <Route path='/' element={<Navigate replace to='/cars' />} />
+        <Route path='/login' element={<Login />} />
         <Route path='/lotLocation/:id' element={<LotLocation />} />
         <Route path='/cars' element={<Cars />} />
         <Route path='/cars/addcar' element={<ValetEntry />} />

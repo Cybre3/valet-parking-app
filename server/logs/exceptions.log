@@ -3770,3 +3770,491 @@ SyntaxError: Unexpected identifier
     at Module._compile (node:internal/modules/cjs/loader:1254:14)
 --- undefined error ---
 
+
+--- undefined error ---
+[undefined]error uncaughtException: sendCarReturnedSMS is not defined
+stack: ReferenceError: sendCarReturnedSMS is not defined
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:79:9)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\smsRoute.js:2:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: sms is not defined
+stack: ReferenceError: sms is not defined
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:13:56)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ')'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:14
+router.delete('/:id', carsController.delete.deleteCar, smsController.post.);
+                                                                          ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:90
+                    res.status(200).send({ smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                    ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    const sms
+                          ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    const SMS
+                          ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    const SMS_
+                          ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:49
+            res.status(200).send({currentMsg: });
+                                              ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Missing initializer in const declaration
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    const SMS_
+                          ^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: let is disallowed as a lexically bound name
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:47
+            let carIsInSystem = await Car.findByIdAndDelete({ _id: id });
+            ^^^
+
+SyntaxError: let is disallowed as a lexically bound name
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:50
+            res.status(200).send({ currentMsg:  });
+                                                ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:50
+            res.status(200).send({ currentMsg:  });
+                                                ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:50
+            res.status(200).send({ currentMsg:  });
+                                                ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:53
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected string
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:45
+            const 'Car Deleted from all cars and moved to returned cars.' = 'Car Deleted from all cars and moved to returned cars.';
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected string
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token '}'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\carsController.js:53
+        }
+        ^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:3:24)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    res.status(200).send({ carControllerMsg: smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                                                                          ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    res.status(200).send({ carControllerMsg: req.locals.smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                                                                                     ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:89
+                    res.status(200).send({ carControllerMsg: req.locals.currentMsgsmsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                                                                                               ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ';'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:80
+            const { message, phone } = req.locals.;
+                                                  ^
+
+SyntaxError: Unexpected token ';'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected identifier
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:80
+            const {currentMsg message, phone } = req.locals;
+                              ^^^^^^^
+
+SyntaxError: Unexpected identifier
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: sendCarParkedSMS is not defined
+stack: ReferenceError: sendCarParkedSMS is not defined
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:97:9)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ':'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\controllers\smsController.js:107
+                    res.status(200).send({ car: casmsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                                                               ^
+
+SyntaxError: Unexpected token ':'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:4:23)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ')'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:12
+router.patch('/:id', carsController.patch.assignCarLotLocation, smsController.);
+                                                                              ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+
+
+--- undefined error ---
+[undefined]error uncaughtException: Unexpected token ')'
+stack: C:\Users\cybre\Documents\valet-parking-app\server\routes\carsRoute.js:12
+router.patch('/:id', carsController.patch.assignCarLotLocation, smsController.post.);
+                                                                                   ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:73:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1176:20)
+    at Module._compile (node:internal/modules/cjs/loader:1218:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at Object.<anonymous> (C:\Users\cybre\Documents\valet-parking-app\server\startup\routes-middlesware.js:9:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+--- undefined error ---
+

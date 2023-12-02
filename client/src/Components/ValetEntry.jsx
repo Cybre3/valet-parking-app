@@ -36,7 +36,7 @@ class ValetEntry extends Form {
     doSubmit = async () => {
         try {
             const car = this.state.data;
-            const message = 'Thank you for using Parkme Valet. \n To request your car, please respond to this message "READY".';
+            const message = 'Thank you for using Parkme Valet.\nTo request your car, please respond to this message "READY".';
 
             await this.props.addCar(car);
             await this.props.loadCars();

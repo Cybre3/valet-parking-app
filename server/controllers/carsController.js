@@ -16,7 +16,7 @@ module.exports = {
             let carIsInSystem = await Car.findOne({ phone, make, model });
             if (carIsInSystem) return res.status(400).send('Car has already been stored.');
 
-            carIsInSystem = new Car({ ...req.body });
+            carIsInSystem = new Car({ ...req.body, timeOfEntry: `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}` });
             await carIsInSystem.save();
 
             res.status(201).send(carIsInSystem);
@@ -24,7 +24,7 @@ module.exports = {
     },
 
     patch: {
-        assignCarLotLocation: async (req, res) => {
+        assignCarLotLocation: async (req, res, next) => {
             const { lotLocation } = req.body;
             const { id } = req.params;
 
@@ -35,18 +35,24 @@ module.exports = {
             carIsInSystem.timeParked = `${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
             await carIsInSystem.save();
 
-            res.status(200).send(carIsInSystem);
+            res.locals.car = carIsInSystem;
+            
+            next();
         }
     },
 
     delete: {
-        deleteCar: async (req, res) => {
+        deleteCar: async (req, res, next) => {
             const { id } = req.params;
+            const currentMsg = 'Car Deleted from all cars and moved to returned cars.';
 
             let carIsInSystem = await Car.findByIdAndDelete({ _id: id });
             if (!carIsInSystem) return res.status(404).send('Car not found.');
 
-            res.status(200).send(`Car Deleted`);
+            res.locals.currentMsg = currentMsg;
+            res.locals.phone = carIsInSystem.phone;
+            
+            next();
         }
     }
 }

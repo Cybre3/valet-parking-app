@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { apiCallBegan } from "./api";
-import carsSlice from "./cars";
 
 
 // Reducer 

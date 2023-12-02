@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 
@@ -10,6 +10,7 @@ function CarDetails(props) {
     const dispatch = useDispatch();
     const params = useParams();
     const car = useSelector(getCarById(params.id));
+    const [carInTransit, setCarInTransit] = useState(false);
 
     useEffect(() => {
         dispatch(loadCars());
@@ -25,6 +26,11 @@ function CarDetails(props) {
 
         try {
             dispatch(sendCarInTransitSMS({ message, carId: params.id, phone }))
+            setCarInTransit(true);
+            // if (carInTransit) {
+            // } else {
+
+            // }
         } catch (error) {
             console.log(error.message)
         }
@@ -41,6 +47,7 @@ function CarDetails(props) {
                                 <span className='text-lg font-bold'>Phone#</span>
                                 <span className='!mr-20'>{phone}</span>
                                 <input type='color' defaultValue={colourNameToHex(color)} disabled />
+                                {/* <button onClick={() => handleDelete(_id)}>Force Delete</button> */}
                             </div>
                             <p className='mx-auto text-center w-full'>{lotLocation}</p>
                             <div className='flex space-x-10 p-6 pt-0 justify-center'>
@@ -60,7 +67,7 @@ function CarDetails(props) {
                                     </span>
                                 </NavLink>
                                 {
-                                    !returnInProgress ?
+                                    !returnInProgress && !carInTransit ?
                                         <button onClick={() => handleCarInTransit(phone)} className='bg-neutral-400 px-4 py-1 w-fit rounded hover:bg-neutral-300 hover:shadow-md'>
                                             Car In Transit
                                         </button> :

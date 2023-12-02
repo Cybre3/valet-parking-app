@@ -74,6 +74,42 @@ module.exports = {
                     res.status(400).send({ smsErrorCode: err.code, smsErrorMessage: err.message })
                 });
 
-        }
+        },
+
+        sendCarReturnedSMS: (req, res) => {
+            const { currentMsg, phone } = res.locals;
+
+            client.messages
+                .create({
+                    from: '18446211510',
+                    body: 'Your car has been returned.\nThank you, again, for using ParkMe Valet!\nIf you have not received your car, please let a valet attendant know.',
+                    to: `1${phone}`
+                })
+                .then(async message => {
+                    res.status(200).send({ carsControllerMsg: currentMsg, smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                })
+                .catch(err => {
+                    res.status(400).send({ smsErrorCode: err.code, smsErrorMessage: err.message })
+                });
+
+        },
+
+        sendCarParkedSMS: (req, res) => {
+            const { phone } = res.locals.car;
+
+            client.messages
+                .create({
+                    from: '18446211510',
+                    body: 'Your car has been Parked.',
+                    to: `1${phone}`
+                })
+                .then(async message => {
+                    res.status(200).send({ car: res.locals.car, smsStatusCode: message.status, messageInfo: message.sid, msg: message.body })
+                })
+                .catch(err => {
+                    res.status(400).send({ smsErrorCode: err.code, smsErrorMessage: err.message })
+                });
+
+        },
     }
 }
